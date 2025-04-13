@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: black;
+    color: #ffffff;
+    font-family: "Roboto Slab", serif;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+}
+
+h1 {
+    font-size: 114px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.main-gallery {
+    display: flex;
+    justify-content: space-between;    
+    align-items: flex-start;
+}
+
+.main-gallery div {
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-gallery div p {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 70px;
+    margin-top: 30px;
+}
+
+.trigger-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.trigger-item {
+    border: #ffffff solid 1px;
+    padding: 25px 100px;
+    margin-bottom: 25px;
+}
+
+.trigger-item:hover {
+    background-color: #002791;
+    color: #ffffff;
+}
+
+.news-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.news-list {
+    background-image: url( https://avatars.mds.yandex.net/get-mpic/4984138/img_id5094143472929761817.jpeg/orig );
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    height: 350px;
+    width: 350px;
+    justify-content: space-between;
+}
+
+@media (max-width: 600px) {
+    .trigger-item {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 20px;
+    }
+
+    .main-gallery {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .news-wrapper{ 
+        align-items:center;
+    }
+}
